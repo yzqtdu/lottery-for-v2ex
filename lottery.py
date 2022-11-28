@@ -36,7 +36,7 @@ def parseHtml(post):
     box = [{"url": item.find("img")["src"], "id": item.find("strong").find("a").string} for item in box if item.get("id")]
     return box
 
-l = userList("897090")
+l = userList("897658")
 print("list parse complete, total length ", len(l))
-r = rankHash(l, createHash("3045.31 10976.68 10956.68"))
+r = rankHash(l, createHash("3078.55 10829.08 2298.80"))
 print(r)
